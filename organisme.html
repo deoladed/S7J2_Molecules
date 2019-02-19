@@ -1,0 +1,60 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mon super UI-Kit</title>
+	<link rel="stylesheet" href="style/style.css"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+</head>
+<body>
+<section>
+			<h1>El countdown !</h1>
+			<hr><br>
+	<div class="row d-flex justify-content-center">
+		<div class="col-5">
+			<p>Que serait un event sans son timer ?!</p>
+			<div class="alert alert-dismissible alert-primary" style='border-radius: 30px'>
+				<h3 class='text-center countdown'><span id="countdown"></span></h3>
+			</div>
+			
+		</div>
+	</div>
+	
+
+</section>	
+
+
+
+
+<!-- Countdown -->
+    <script>
+    	var countDownDate = new Date("Mar 5, 2019 15:37:25").getTime();
+    	var x = setInterval(function() {
+    		var now = new Date().getTime();
+    		var distance = countDownDate - now;
+
+    		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+
+    		document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+    		+ minutes + "m " + seconds + "s ";
+
+
+    		if (distance < 0) {
+    			clearInterval(x);
+    			document.getElementById("countdown").innerHTML = "IT'S TIME GUYS";
+    		}
+    	}, 1000);
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://bootswatch.com/_assets/js/custom.js"></script>
+</body>
+</html>

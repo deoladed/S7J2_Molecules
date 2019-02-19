@@ -5,39 +5,104 @@
 	<title>Mon super UI-Kit</title>
 	<link rel="stylesheet" href="style/style.css"/>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
 </head>
+
 <body>
+  <section>
+    <form>
+      <fieldset>
+        <legend>Log in</legend>
+
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+           <input class="form-check-input" type="checkbox" value="" checked="">
+           Remember me !
+         </label>
+       </div>      
+       <br>
+       <button type="submit" class="btn btn-primary">Submit</button>
+     </fieldset>
+   </form>
+ </section>
+
+ <section>
+  <form>
+    <fieldset>
+      <legend>Sign up!</legend>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password, again.</label>
+        <input type="password-confirmation" class="form-control" id="exampleInputPassword1" placeholder="Password confirmation">
+      </div>
+      <br>
+      <button type="submit" class="btn btn-primary">Sign up !</button>
+    </fieldset>
+  </form>
+</section>
+
 <section>
-<form>
-  <fieldset>
-    <legend>Log in</legend>
+  <form>
+    <fieldset>
+      <legend>You forgot your password dumbass ?!</legend>
 
-    <div class="form-group">
-      <label for="exampleInputEmail1">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-    </div>
-    <div class="form-group">
-      <label for="exampleInputPassword1">Password</label>
-      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-    </div>
-    <div class="form-check">
-      <label class="form-check-label">
-    	  <input class="form-check-input" type="checkbox" value="" checked="">
-    	  Remember me !
-      </label>
-    </div>      
+      <div class="form-group">
+        <label for="exampleInputEmail1">Give me your fucking email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">I might sell your email adresse since you're a dumb motherfucker who can't remember his fuckin' password.</small>
+      </div> 
     </fieldset><br>
-    <button type="submit" class="btn bg-tuba text-tuba-blue">Submit</button>
-  </fieldset>
-</form>
-</section>	
+    <button type="submit" class="btn btn-primary">Reset password</button>
+  </form>
+</section>
 
- <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<section>
+  <form>
+    <fieldset>
+      <legend>Change my password</legend>
+      <div class="form-group">
+        <label for="exampleInputPassword1">New password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">New password, again.</label>
+        <input type="password-confirmation" class="form-control" id="exampleInputPassword1" placeholder="Password confirmation">
+      </div><br>
+      <div class="form-group">
+        <label for="exampleInputPassword1">We need your old password for security concerns.</label>
+        <input type="password-confirmation" class="form-control" id="exampleInputPassword1" placeholder="Old password">
+      </div>
+      <br>
+      <button type="submit" class="btn btn-primary">Reset password</button>
+    </fieldset>
+  </form>
+
+  Inscription
+  Connexion
+  Rentrer son email pour mot de passe oublié
+  Changement de mot de passe
+
+</section>  
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
